@@ -1,0 +1,435 @@
+/* Custom Stylesheet */
+/**
+ * Updating some elements
+ */
+
+@media only screen and (min-width: 1201px) {
+  .parallax-maitrise {
+    height: 700px !important;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .parallax-maitrise {
+    height: 600px !important;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 600px) {
+  .parallax-maitrise {
+    height: 800px !important;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .parallax-maitrise {
+    height: 700px !important;
+  }
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.no-top{
+  min-height: 500px !important;
+}
+
+.no-top div.section{
+  top: 0;
+}
+
+.parallax-container {
+  min-height: 450px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 15%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.card.h150{
+  height: 150px;
+}
+
+.card.h150 .card-image,
+.card.h150 .card-image img{
+  height: 100%;
+}
+
+.card.h200{
+  height: 200px;
+}
+
+.card.h200 .card-image,
+.card.h200 .card-image img{
+  height: 100%;
+}
+
+
+.overb{
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.side-nav a{
+  padding: 0 30px;
+}
+
+.side-nav li{
+  padding: 0;
+}
+
+#comp_body span.badgem{
+  border-radius: 4px 4px 0px 0px;
+  padding: 2px 3px;
+  font-size: 18px;
+  line-height: 10px
+}
+
+#comp_body .card .progress{
+  margin: 0;
+}
+
+#comp_body, #real_body, #bio_body, #cont_body{
+  padding-top: 70px;
+  margin-bottom: 0px;
+}
+
+#comp_body .card .card-content {
+  padding: 0px;
+}
+
+ul.fsocials li{
+  display: inline-block;
+  opacity: 0.8;
+  transition: opacity .1s linear;
+}
+
+ul.fsocials li:hover{
+  opacity: 1;
+}
+
+div.fsocial{
+  background-image: url("../img/socircle.jpg");
+  height: 40px;
+  width: 40px;
+}
+
+div.fsocial.facebook{   background-position: -10px  -5px; }
+div.fsocial.linkedin{   background-position:  51px 145px; }
+div.fsocial.googleplus{ background-position:  98px 145px; }
+div.fsocial.dropbox{    background-position: 145px 145px; }
+div.fsocial.skype{      background-position:  97px  48px; }
+div.fsocial.github{      background-position:  97px  48px; }
+
+::selection {
+  background: #9575cd;
+  color: white;
+}
+::-moz-selection {
+  background: #9575cd;
+  color: white;
+}
+
+i.material-icons.f120{
+  font-size: 80px;
+  border: 2px solid;
+  border-radius: 80px;
+  padding: 30px;
+}
+
+.tt{
+  text-decoration: underline dotted;
+}
+
+span.no-display{
+  display: none;
+}
+
+.icon-block:hover h2 i{
+  background-color: #7e57c2;
+  font-size: 100px;
+  margin-top: -20px;
+}
+
+.icon-block:hover h2{
+  color: white !important;
+}
+
+.icon-block:hover h4{
+}
+
+.icon-block:hover h2,
+.icon-block:hover h4,
+.icon-block:hover h2 i{
+  transition: all .2s;
+  cursor: default;
+}
+
+#real_body .card .card-image:hover{
+  opacity: 0.8;
+}
+
+#real_body .card .card-content{transition: all .2s;}
+.av:hover  .card-content{background-color: #e3f2fd;}
+.mi:hover  .card-content{background-color: #f1f8e9;}
+.po:hover  .card-content{background-color: #fff8e1;}
+.oem:hover .card-content{background-color: #e8eaf6;}
+.cal:hover .card-content{background-color: #e3f2fd;}
+
+.hola, .halo{ transition: all .5s; }
+.hola{ opacity: 1; }
+.halo{ opacity: 0; }
+
+.lego:hover .hola{
+  margin-left: -85px;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.lego:hover .halo{
+  transition: all .5s;
+  opacity: 1;
+  display: inline-block;
+}
+
+footer.page-footer{
+  padding-top: 0;
+}
+
+#mainemu a:hover{
+  background-color: #673ab7;
+}
+
+/**************** timeline section *****************/
+
+/*——————————————
+Global
+———————————————*/
+
+body {
+  font-family: helvetica;
+}
+/*——————————————
+TimeLine CSS
+———————————————*/
+/* Base */
+
+#merulife {
+  text-align: center;
+  width: 95%;
+}
+
+section.timeline-outer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1.header {
+  font-size: 50px;
+  line-height: 70px;
+}
+/* Timeline */
+
+.timeline p{
+  line-height: 1.5rem;
+}
+
+.timeline {
+  border-left: 8px solid #9575cd;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: #333;
+  margin: 0px auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  padding: 20px;
+  list-style: none;
+  text-align: left;
+}
+
+.timeline h1,
+.timeline h2,
+.timeline h3 {
+  font-size: 1.4em;
+}
+
+.timeline .event {
+  border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .event:before {
+  left: -177.5px;
+  color: #212121;
+  /*content: attr(data-date);*/
+  text-align: right;
+  /*  font-weight: 100;*/
+  
+  font-size: 16px;
+  min-width: 120px;
+}
+
+.timeline .event:after {
+  box-shadow: 0 0 0 8px #9575cd;
+  left: -28px;
+  background: #212121;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  content: "";
+  top: 8px;
+}
+/**/
+/*——————————————
+Responsive Stuff
+———————————————*/
+
+@media (max-width: 945px) {
+  .timeline .event::before {
+    left: 0.5px;
+    top: 20px;
+    min-width: 0;
+    font-size: 13px;
+  }
+  .timeline h3 {
+    font-size: 16px;
+  }
+  .timeline p {
+    padding-top: 20px;
+  }
+  section.lab h3.card-title {
+    padding: 5px;
+    font-size: 16px
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline .event::before {
+    left: 0.5px;
+    top: 20px;
+    min-width: 0;
+    font-size: 13px;
+  }
+  .timeline .event:nth-child(1)::before,
+  .timeline .event:nth-child(3)::before,
+  .timeline .event:nth-child(5)::before {
+    top: 38px;
+  }
+  .timeline h3 {
+    font-size: 16px;
+  }
+  .timeline p {
+    padding-top: 20px;
+  }
+}
+/*——————————————
+others
+———————————————*/
+
+a.portfolio-link {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+/***************titles section ****************/
+
+.section-title {
+    position: relative;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.section-title span {
+    position: relative;
+    display: inline-block;
+    padding-right: 1.4em;
+    background: #fff;
+    padding-left: 1.4em;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-bottom: 4px solid #dddddd;
+}
+
+.lh {
+  line-height: 40px;
+}
+
+span.nopadd{
+  padding: 0;
+}
+
+.chip{
+  margin-bottom: 5px;
+}
+
+.timeline_container p{
+  line-height: 22px;
+}
+
