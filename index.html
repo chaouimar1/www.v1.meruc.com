@@ -40,18 +40,21 @@
       <a id="logo-container" href="#" class="white-text brand-logo lego">M<span class="hola">ERUC</span><span class="halo">.CHAOUI</span>
       </a>
       <ul class="right hide-on-med-and-down" id="mainemu">
+        <li><a class="white-text scollmenu" id="serv_menu" href="#bio_body">A propos</a></li>
         <li><a class="white-text scollmenu" id="serv_menu" href="#serv_body">Services</a></li>
         <li><a class="white-text scollmenu" id="comp_menu" href="#comp_body">Competences</a></li>
         <li><a class="white-text scollmenu" id="real_menu" href="#real_body">Realisations</a></li>
-        <li><a class="white-text scollmenu" id="bio_menu" href="#bio_body">Biographie</a></li>
-        <li><a class="white-text modal-trigger" id="cont_menu" data-target="modal1" href="https://www.dropbox.com/s/8volrkgt4audgal/CHAOUI%20Marwane%20-%20CV.pdf?dl=0" target="_blanc">Résumé</a></li>
+        <li><a class="white-text scollmenu" id="bio_menu" href="#cult_body">Culture</a></li>
+        <li><a class="white-text modal-trigger" id="cont_menu" href="https://www.dropbox.com/s/8volrkgt4audgal/CHAOUI%20Marwane%20-%20CV.pdf?dl=0" target="_blanc">Résumé</a></li>
       </ul>
 
       <ul style="left: -250px;" id="nav-mobile" class="side-nav">
-        <li><a class="waves-effect" href="#">Competences</a></li>
-        <li><a class="waves-effect" href="#">Realisations</a></li>
-        <li><a class="waves-effect" href="#">Biographie</a></li>
-        <li><a class="waves-effect" href="#">Contact</a></li>
+        <li><a class="waves-effect" id="serv_menu" href="#bio_body">A propos</a></li>
+        <li><a class="waves-effect" id="serv_menu" href="#serv_body">Services</a></li>
+        <li><a class="waves-effect" id="comp_menu" href="#comp_body">Competences</a></li>
+        <li><a class="waves-effect" id="real_menu" href="#real_body">Realisations</a></li>
+        <li><a class="waves-effect" id="bio_menu" href="#cult_body">Culture</a></li>
+        <li><a class="waves-effect" id="cont_menu" href="https://www.dropbox.com/s/8volrkgt4audgal/CHAOUI%20Marwane%20-%20CV.pdf?dl=0" target="_blanc">Résumé</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons white-text">menu</i></a>
     </div>
@@ -75,6 +78,20 @@
     </div>
   </div>
 
+
+  <div id="bio_body" class="container">
+      <div class="row center">
+          <div class="col s12 m12">
+              <h3 class="header deep-purple-text lighten-1 section-title">
+                  <span>A PROPOS</span>
+              </h3>
+              <p class="flow-text lh">
+                  Je suis un jeune <strong class="deep-purple-text">Développeur</strong> Marocain. Suivant mes études d'ingénierie en <span class="tt" data-position="top" data-tooltip="Génie Logiciel">GL</span>.
+                  J'aime decouvrir les nouvelles technologies et l'Open source.
+              </p>
+          </div>
+      </div>
+  </div>
 
 
   <div class="container" id="serv_body">
@@ -126,18 +143,6 @@
       <li><a class="btn-floating cyan darken-1" href="https://www.linkedin.com/in/chaouimar1" target="_blanc"><i class="material-icons">person_pin</i></a></li>
     </ul>
   </div>
-
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action btn  waves-effect deep-purple">Envoyer</a>
-      <a href="#!" class=" modal-action modal-close waves-effect waves-deep-purple btn-flat">Fermer</a>
-    </div>
-  </div>
-
 
 
    <div id="comp_body" class="parallax-container no-top parallax-maitrise">
@@ -445,26 +450,10 @@
   </div>
 
 
-  <div id="bio_body" class="container">
-      <div class="row center">
-          <div class="col s12 m12">
-              <h3 class="header deep-purple-text lighten-1 section-title">
-                  <span>A PROPOS</span>
-              </h3>
-
-              <p class="flow-text lh">
-                  Je suis un jeune <strong class="deep-purple-text">Développeur</strong> Marocain. Suivant mes études d'ingénierie en <span class="tt" data-position="top" data-tooltip="Génie Logiciel">GL</span>.
-                  J'aime decouvrir les nouvelles technologies et l'Open source.
-              </p>
-          </div>
-      </div>
-  </div>
-
-
 <div class="container">
 <div class="row">
 
- <div class="col l6 s12"> 
+ <div class="col l6 s12" id="cult_body"> 
           <h3 class="header deep-purple-text lighten-1 section-title">
               <span>Competences Techniques</span>
           </h3>
