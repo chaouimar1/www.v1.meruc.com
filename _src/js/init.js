@@ -31,10 +31,10 @@ $(function(){
     $(".elements").typed({
       strings: [
               "^300un <span class=\"deep-purple\"><u>Développeur web</u></span>",
+              "^300<span class=\"white grey-text text-darken-4\"><u>&nbsp;Marwane CHAOUI&nbsp;</u></span>^15000",
               "^300un <span><u>Frontend'er</u></span>",
               "^300un <span><u>Débutant <span class=\"light-green darken-1\">Android</span></u></span>",
               "^300un <span><u>Utilisateur <span class=\"orange ubufont\">Ubuntu</span></u></span>",
-              "^300<span class=\"white grey-text text-darken-4\"><u>&nbsp;Marwane CHAOUI&nbsp;</u></span>^15000"
       ],
       contentType: 'html',
       loop: true,
