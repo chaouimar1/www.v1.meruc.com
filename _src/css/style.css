@@ -5,7 +5,7 @@
 
 @media only screen and (min-width: 1201px) {
   .parallax-maitrise {
-    height: 700px !important;
+    height: 800px !important;
   }
 }
 
@@ -17,13 +17,13 @@
 
 @media only screen and (min-width: 501px) and (max-width: 600px) {
   .parallax-maitrise {
-    height: 800px !important;
+    height: 1300px !important;
   }
 }
 
 @media only screen and (max-width: 500px){
   .parallax-maitrise {
-    height: 700px !important;
+    height: 1300px !important;
   }
 }
 
@@ -106,7 +106,7 @@ footer.page-footer {
 
 .overb{
   background-color: rgb(0, 0, 0);
-  opacity: 0.7;
+  opacity: 0.6;
   position: relative;
   width: 100%;
   height: 100%;
@@ -455,3 +455,29 @@ span.nopadd{
     100% { opacity:1; }
 }
 
+.centerw{
+  text-align: center
+}
+
+.centerw ul{
+  display: inline-block;
+}
+
+.card{
+  background-color: transparent;
+}
+
+ul#mainemu li a,
+ul#nav-mobile li a{
+  text-transform: uppercase;
+}
+
+#comp_body .card img{
+  transition: all .1s;
+}
+
+#comp_body .card img:hover{
+  -ms-transform: rotate(2deg); /* IE 9 */
+  -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+  transform: rotate(2deg);
+}
