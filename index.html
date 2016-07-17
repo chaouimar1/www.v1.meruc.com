@@ -408,7 +408,60 @@
 <div class="container">
 <div class="row">
 
- <div class="col l6 s12" id="cult_body"> 
+  <div class="col offset-l1 l10 s12">
+    <h3 class="header deep-purple-text lighten-1 section-title">
+        <span>Parcours</span>
+    </h3>
+
+    <section id="timeline" class="timeline-outer">
+      <div class="container" id="merulife">
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <ul class="timeline">
+              <li class="event">
+                <h3 class="deep-purple-text">2014 – Présent: Ingénieur GL</h3>
+                <p>
+                  Etudiant Génie Logiciel à l’école d’ingénierie High-Tech Rabat (Bac+5 cours du soir - Espéré).
+                </p>
+              </li>
+              <li class="event">
+                <h3 class="deep-purple-text">Nov. 2013 – Présent: Responsable SI</h3>
+                <p>
+                  Employé à High-Tech RABAT – Webmaster et Responsable du système d’information.
+                </p>
+              </li>
+              <li class="event">
+                <h3 class="deep-purple-text">Oct. 2013: Certifié Microsoft</h3>
+                <p>
+                  Certifié Microsoft Specialist : Programmation en HTML5 avec JavaScript et CSS3 Specialist : E408-7620.
+                </p>
+              </li>
+              <li class="event">
+                <h3 class="deep-purple-text">Fév. 2012 – Mars 2012: <br>Stage de Formation OFPPT</h3>
+                <p>
+                  Stage de formation proposé par l’OFPPT, au sein de la Division de l’enseignement à distance - réalisation d’une application web de gestion des Archives (PHP & MySQL).
+                </p>
+              </li>
+              <li class="event">
+                <h3 class="deep-purple-text">2010 – 2012: Diplome TDSI</h3>
+                <p>
+                  Technicien spécialisé en développement Informatique à l’institut spécialisé de technologie appliquée Hay Riad Rabat (Option .NET).
+                </p>
+              </li>
+              <li class="event" data-date="2009 – 2010">
+                <h3 class="deep-purple-text">2009-2010: Baccalauréat</h3>
+                <p>
+                  Baccalauréat sciences physiques Lycée Salman El Farsi – Témara.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="col l12 s12" id="cult_body"> 
           <h3 class="header deep-purple-text lighten-1 section-title">
               <span>Culture</span>
           </h3>
@@ -416,152 +469,112 @@
           <div class="row">
             <div class="col s12">
               <ul class="tabs">
-                <li class="tab col s3"><a class="blue-grey-text" onclick="tabselect('wc')" href="#">web celeb</a></li>
+                <li class="tab col s3"><a class="blue-grey-text" onclick="tabselect('tt')" href="#">Tout</a></li>
                 <li class="tab col s3"><a class="blue-grey-text" onclick="tabselect('fl')" href="#">films</a></li>
                 <li class="tab col s3"><a class="blue-grey-text" onclick="tabselect('sr')" href="#">series</a></li>
                 <li class="tab col s3"><a class="blue-grey-text" onclick="tabselect('jv')" href="#">jeux videos</a></li>
               </ul>
             </div>
             <div class="col s12">
-
-            <div class="row micards">
-
-              <div class="col s12 m12">
-                <div class="card jv" data-position="left" data-tooltip="Metal Gear Solid">
-                  <div class="card-image blue-grey">
-                    <img src="_src/img/cult/1.jpg">
-                    <span class="card-title"></span>
-                  </div>
-                </div>
-              </div>
-
+              <div class="row micards">
+<!--***** line One *****-->
                 
+                <div class="col s12 m4">
+                  <div class="card jv tt" data-position="top" data-tooltip="Metal Gear Solid">
+                    <div class="card-image blue-grey">
+                      <img src="_src/img/cult/mgs.jpg">
+                      <span class="card-title"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s6 m2">
+                  <div class="card ot tt" data-position="top" data-tooltip="science.ma">
+                    <div class="card-image blue-grey">
+                      <img src="_src/img/cult/science.ma.png">
+                      <span class="card-title"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s6 m2">
+                  <div class="card jv tt" data-position="top" data-tooltip="Super Hexagon">
+                    <div class="card-image blue-grey">
+                      <img src="_src/img/cult/superhexagon.png">
+                      <span class="card-title"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s6 m2">
+                  <div class="card fl tt" data-position="top" data-tooltip="Inception">
+                    <div class="card-image blue-grey">
+                      <img src="_src/img/cult/inception.jpg">
+                      <span class="card-title"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s6 m2">
+                  <div class="card ot tt" data-position="top" data-tooltip="Ubuntu">
+                    <div class="card-image blue-grey">
+                      <img src="_src/img/cult/ubuntu.png">
+                      <span class="card-title"></span>
+                    </div>
+                  </div>
+                </div>
+<!--***** line two *****-->
 
-                <div class="col s6 m3">
-                  <div class="card fl" data-position="left" data-tooltip="Inception">
+                <div class="col s6 m2">
+                  <div class="card sr tt" data-position="bottom" data-tooltip="KAIJI">
                     <div class="card-image blue-grey">
-                      <img src="_src/img/cult/2.jpg">
+                      <img src="_src/img/cult/kaiji.jpg">
                       <span class="card-title"></span>
                     </div>
                   </div>
-                  <div class="card fl" data-position="left" data-tooltip="Day of Anger">
+                </div>
+                <div class="col s6 m2">
+                  <div class="card ot tt" data-position="bottom" data-tooltip="AVICII">
                     <div class="card-image blue-grey">
-                      <img src="_src/img/cult/3.jpg">
+                      <img src="_src/img/cult/avicii.jpg">
                       <span class="card-title"></span>
                     </div>
                   </div>
-                   </div>
-
-                <div class="col s6 m3">
-                  <div class="card sr" data-position="right" data-tooltip="Kaiji">
+                </div>
+                <div class="col s6 m2">
+                  <div class="card fl tt" data-position="bottom" data-tooltip="Nikola Tesla">
                     <div class="card-image blue-grey">
-                      <img src="_src/img/cult/4.jpg">
+                      <img src="_src/img/cult/nikola.jpeg">
                       <span class="card-title"></span>
                     </div>
                   </div>
-                  <div class="card jv" data-position="right" data-tooltip="Burnout">
+                </div>
+                <div class="col s6 m2">
+                  <div class="card sr tt" data-position="bottom" data-tooltip="The Good, The Bad And The Ugly">
                     <div class="card-image blue-grey">
-                      <img src="_src/img/cult/5.jpg">
+                      <img src="_src/img/cult/tgbu.jpg">
+                      <span class="card-title"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s9 m3">
+                  <div class="card sr tt" data-position="bottom" data-tooltip="Attack on Titans">
+                    <div class="card-image blue-grey">
+                      <img src="_src/img/cult/snk.jpg">
+                      <span class="card-title"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s3 m1">
+                  <div class="card jv tt" data-position="bottom" data-tooltip="Sony Xperia">
+                    <div class="card-image blue-grey">
+                      <img src="_src/img/cult/xperia.jpg">
                       <span class="card-title"></span>
                     </div>
                   </div>
                 </div>
 
-                <div class="col s6 m6">
-                  <div class="card sr" data-position="right" data-tooltip="The good, the bad and the ugly">
-                    <div class="card-image blue-grey">
-                      <img src="_src/img/cult/6.jpg">
-                      <span class="card-title"></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col s6 m4">
-                  <div class="card wc" data-position="left" data-tooltip="Taylor Davis">
-                    <div class="card-image blue-grey">
-                      <img src="_src/img/cult/7.jpg">
-                      <span class="card-title"></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s6 m4">
-                  <div class="card wc" data-position="bottom" data-tooltip="Cyprien">
-                    <div class="card-image blue-grey">
-                      <img src="_src/img/cult/8.jpg">
-                      <span class="card-title"></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s6 m4">
-                  <div class="card sr" data-position="bottom" data-tooltip="خواطر">
-                    <div class="card-image blue-grey">
-                      <img src="_src/img/cult/9.jpg">
-                      <span class="card-title"></span>
-                    </div>
-                  </div>
-                </div>
-                
               </div>
-
             </div>
           </div>
-        </div>
+  </div>
 
-        <div class="col l6 s12">
-          <h3 class="header deep-purple-text lighten-1 section-title">
-              <span>Parcours</span>
-          </h3>
-        
-          <section id="timeline" class="timeline-outer">
-            <div class="container" id="merulife">
-              <div class="row">
-                <div class="col s12 m12 l12">
-                  <ul class="timeline">
-                    <li class="event">
-                      <h3 class="deep-purple-text">2014 – Présent: Ingénieur GL</h3>
-                      <p>
-                        Etudiant Génie Logiciel à l’école d’ingénierie High-Tech Rabat (Bac+5 cours du soir - Espéré).
-                      </p>
-                    </li>
-                    <li class="event">
-                      <h3 class="deep-purple-text">Nov. 2013 – Présent: Responsable SI</h3>
-                      <p>
-                        Employé à High-Tech RABAT – Webmaster et Responsable du système d’information.
-                      </p>
-                    </li>
-                    <li class="event">
-                      <h3 class="deep-purple-text">Oct. 2013: Certifié Microsoft</h3>
-                      <p>
-                        Certifié Microsoft Specialist : Programmation en HTML5 avec JavaScript et CSS3 Specialist : E408-7620.
-                      </p>
-                    </li>
-                    <li class="event">
-                      <h3 class="deep-purple-text">Fév. 2012 – Mars 2012: <br>Stage de Formation OFPPT</h3>
-                      <p>
-                        Stage de formation proposé par l’OFPPT, au sein de la Division de l’enseignement à distance - réalisation d’une application web de gestion des Archives (PHP & MySQL).
-                      </p>
-                    </li>
-                    <li class="event">
-                      <h3 class="deep-purple-text">2010 – 2012: Diplome TDSI</h3>
-                      <p>
-                        Technicien spécialisé en développement Informatique à l’institut spécialisé de technologie appliquée Hay Riad Rabat (Option .NET).
-                      </p>
-                    </li>
-                    <li class="event" data-date="2009 – 2010">
-                      <h3 class="deep-purple-text">2009-2010: Baccalauréat</h3>
-                      <p>
-                        Baccalauréat sciences physiques Lycée Salman El Farsi – Témara.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-
-
-       
     </div>
 </div>
 
