@@ -481,3 +481,27 @@ ul#nav-mobile li a{
   -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
   transform: rotate(2deg);
 }
+
+@-webkit-keyframes fadein {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}
+
+@keyframes fadein {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}
+
+.fading.ot,
+.fading.fl,
+.fading.sr,
+.fading.jv{
+    -webkit-animation: fadein .8s ease-in alternate infinite;
+    -moz-animation: fadein .8s ease-in alternate infinite;
+    animation: fadein .8s ease-in alternate infinite;
+}

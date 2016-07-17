@@ -24,7 +24,11 @@
 $("#pslides a").tosrus();
 function tabselect(type){
   $('.micards .card').fadeTo( "fast", 0.5 );
-  $('.micards .'+type).fadeTo( "fast", 1 );
+  $('.micards .card').removeClass("fading");
+    $('.micards .'+type).fadeTo( "fast", 1 );
+  if(type!="tt"){
+    $('.micards .'+type).addClass("fading");
+  }
 };
 
 $(function(){
