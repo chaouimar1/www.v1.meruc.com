@@ -314,11 +314,11 @@ h1.header {
 }
 
 .timeline .event:before {
-  left: -177.5px;
+  right: 0px;
   color: #212121;
-  /*content: attr(data-date);*/
+  content: attr(data-date);
   text-align: right;
-  /*  font-weight: 100;*/
+  font-weight: 100;
   
   font-size: 16px;
   min-width: 120px;
