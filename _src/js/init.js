@@ -7,21 +7,23 @@
     $('.modal-trigger').leanModal();
     $('.micards .card').tooltip({delay: 50});
     $('.tt').tooltip({delay: 50});
-    $('.materialboxed').materialbox();
-
+    $('.scrollspy').scrollSpy();
   });
+  
+  var options = [
+    { selector:"#bio_fire",  offset: 100, callback: "Materialize.fadeInImage('#bio_fire');" },
+    { selector:"#serv_fire", offset: 100, callback: "Materialize.fadeInImage('#serv_fire');" },
+    { selector:"#comp_fire", offset: 500, callback: "Materialize.fadeInImage('#comp_fire');" },
+    { selector:"#real_fire", offset: 100, callback: "Materialize.fadeInImage('#real_fire');" },
+    { selector:"#parc_fire", offset: 100, callback: "Materialize.fadeInImage('#parc_fire');" },
+    { selector:"#cult_fire", offset: 100, callback: "Materialize.fadeInImage('#cult_fire');" }
+  ];
+  Materialize.scrollFire(options);
 
-  $('.scollmenu').click(function(){
-      $('html, body').stop().animate({
-          scrollTop: $( $(this).attr('href') ).offset().top
-      }, 1000);
-      return false;
-  });
-
-   // end of document ready
-})(jQuery); // end of jQuery name space
+})(jQuery); 
 
 $("#pslides a").tosrus();
+
 function tabselect(type){
   $('.micards .card').fadeTo( "fast", 0.5 );
   $('.micards .card').removeClass("fading");
@@ -46,7 +48,6 @@ $(function(){
       typeSpeed: 60,
       backSpeed: 10,
       shuffle: false,
-      startDelay: 500,
-      callback: function() {/*alert('done !')*/},
+      startDelay: 500
     });
 });

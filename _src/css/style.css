@@ -120,23 +120,18 @@ footer.page-footer {
   padding: 0;
 }
 
-#comp_body span.badgem{
+#comp_fire span.badgem{
   border-radius: 4px 4px 0px 0px;
   padding: 2px 3px;
   font-size: 18px;
   line-height: 10px
 }
 
-#comp_body .card .progress{
+#comp_fire .card .progress{
   margin: 0;
 }
 
-#comp_body, #real_body, #bio_body, #cont_body{
-  padding-top: 70px;
-  margin-bottom: 0px;
-}
-
-#comp_body .card .card-content {
+#comp_fire .card .card-content {
   padding: 0px;
 }
 
@@ -207,11 +202,11 @@ span.no-display{
   cursor: default;
 }
 
-#real_body .card .card-image:hover{
+#real_fire .card .card-image:hover{
   opacity: 0.8;
 }
 
-#real_body .card .card-content{transition: all .2s;}
+#real_fire .card .card-content{transition: all .2s;}
 .av:hover  .card-content{background-color: #e3f2fd;}
 .mi:hover  .card-content{background-color: #f1f8e9;}
 .po:hover  .card-content{background-color: #fff8e1;}
@@ -238,7 +233,8 @@ footer.page-footer{
   padding-top: 0;
 }
 
-#mainemu a:hover{
+#mainemu a:hover,
+#mainemu a.active{
   background-color: #673ab7;
 }
 
@@ -472,11 +468,11 @@ ul#nav-mobile li a{
   text-transform: uppercase;
 }
 
-#comp_body .card img{
+#comp_fire .card img{
   transition: all .1s;
 }
 
-#comp_body .card img:hover{
+#comp_fire .card img:hover{
   -ms-transform: rotate(2deg); /* IE 9 */
   -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
   transform: rotate(2deg);
