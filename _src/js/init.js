@@ -11,7 +11,6 @@
   });
   
   var options = [
-    { selector:"#bio_fire",  offset: 100, callback: "Materialize.fadeInImage('#bio_fire');" },
     { selector:"#serv_fire", offset: 100, callback: "Materialize.fadeInImage('#serv_fire');" },
     { selector:"#comp_fire", offset: 500, callback: "Materialize.fadeInImage('#comp_fire');" },
     { selector:"#real_fire", offset: 100, callback: "Materialize.fadeInImage('#real_fire');" },
