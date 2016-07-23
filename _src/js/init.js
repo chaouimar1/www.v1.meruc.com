@@ -11,11 +11,10 @@
   });
   
   var options = [
-    { selector:"#serv_fire", offset: 100, callback: "Materialize.fadeInImage('#serv_fire');" },
-    { selector:"#comp_fire", offset: 500, callback: "Materialize.fadeInImage('#comp_fire');" },
-    { selector:"#real_fire", offset: 100, callback: "Materialize.fadeInImage('#real_fire');" },
-    { selector:"#parc_fire", offset: 100, callback: "Materialize.fadeInImage('#parc_fire');" },
-    { selector:"#cult_fire", offset: 100, callback: "Materialize.fadeInImage('#cult_fire');" }
+    { selector:"#serv_fire", offset: 100, callback: "$('#serv_fire').addClass('animated fadeInUp');" },
+    { selector:"#comp_fire", offset: 500, callback: "$('#comp_fire').addClass('animated fadeIn');" },
+    { selector:"#real_fire", offset: 100, callback: "$('#real_fire').addClass('animated fadeInUp');" },
+    { selector:"#cult_fire", offset: 100, callback: "$('#cult_fire').addClass('animated fadeInUp');" }
   ];
   Materialize.scrollFire(options);
 
@@ -36,10 +35,10 @@ $(function(){
     $(".elements").typed({
       strings: [
               "^300un <span class=\"deep-purple\"><u>Développeur web</u></span>",
-              "^300<span class=\"white grey-text text-darken-4\"><u>&nbsp;Marwane CHAOUI&nbsp;</u></span>^15000",
               "^300un <span><u>Frontend'er</u></span>",
               "^300un <span><u>Débutant <span class=\"light-green darken-1\">Android</span></u></span>",
-              "^300un <span><u>Utilisateur <span class=\"orange ubufont\">Ubuntu</span></u></span>",
+              "^300un <span><u>Utilisateur <span class=\"orange\">Ubuntu</span></u></span>",
+              "^300<span class=\"white grey-text text-darken-4\"><u>&nbsp;Marwane CHAOUI&nbsp;</u></span>^15000",
       ],
       contentType: 'html',
       loop: true,

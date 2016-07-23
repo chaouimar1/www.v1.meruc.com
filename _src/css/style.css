@@ -3,6 +3,10 @@
  * Updating some elements
  */
 
+body {
+  font-family: Ubuntu, sans-serif;
+}
+
 @media only screen and (min-width: 1201px) {
   .parallax-maitrise {
     height: 800px !important;
@@ -182,6 +186,12 @@ span.no-display{
   display: none;
 }
 
+.icon-block h2,
+.icon-block h2 i,
+.icon-block h4 {
+  transition: all .3s;
+}
+
 .icon-block:hover h2 i{
   background-color: #7e57c2;
   font-size: 100px;
@@ -192,13 +202,10 @@ span.no-display{
   color: white !important;
 }
 
-.icon-block:hover h4{
-}
-
 .icon-block:hover h2,
 .icon-block:hover h4,
 .icon-block:hover h2 i{
-  transition: all .2s;
+  transition: all .3s;
   cursor: default;
 }
 
@@ -213,21 +220,6 @@ span.no-display{
 .oem:hover .card-content{background-color: #e8eaf6;}
 .cal:hover .card-content{background-color: #e3f2fd;}
 
-.hola, .halo{ transition: all .5s; }
-.hola{ opacity: 1; }
-.halo{ opacity: 0; }
-
-.lego:hover .hola{
-  margin-left: -85px;
-  opacity: 0;
-  transition: all .5s;
-}
-
-.lego:hover .halo{
-  transition: all .5s;
-  opacity: 1;
-  display: inline-block;
-}
 
 footer.page-footer{
   padding-top: 0;
@@ -236,155 +228,6 @@ footer.page-footer{
 #mainemu a:hover,
 #mainemu a.active{
   background-color: #673ab7;
-}
-
-/**************** timeline section *****************/
-
-/*——————————————
-Global
-———————————————*/
-
-body {
-  font-family: Ubuntu, Arial, 'libra sans', sans-serif;
-}
-/*——————————————
-TimeLine CSS
-———————————————*/
-/* Base */
-
-#merulife {
-  text-align: center;
-  width: 95%;
-}
-
-section.timeline-outer {
-  width: 100%;
-  margin: 0 auto;
-}
-
-h1.header {
-  font-size: 50px;
-  line-height: 70px;
-}
-/* Timeline */
-
-.timeline p{
-  line-height: 1.5rem;
-}
-
-.timeline {
-  border-left: 8px solid #9575cd;
-  border-bottom-right-radius: 2px;
-  border-top-right-radius: 2px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  color: #333;
-  margin: 0px auto;
-  letter-spacing: 0.5px;
-  position: relative;
-  line-height: 1.4em;
-  padding: 20px;
-  list-style: none;
-  text-align: left;
-}
-
-.timeline h1,
-.timeline h2,
-.timeline h3 {
-  font-size: 1.4em;
-}
-
-.timeline .event {
-  border-bottom: 1px solid rgba(160, 160, 160, 0.2);
-  padding-bottom: 15px;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.timeline .event:last-of-type {
-  padding-bottom: 0;
-  margin-bottom: 0;
-  border: none;
-}
-
-.timeline .event:before,
-.timeline .event:after {
-  position: absolute;
-  display: block;
-  top: 0;
-}
-
-.timeline .event:before {
-  right: 0px;
-  color: #212121;
-  content: attr(data-date);
-  text-align: right;
-  font-weight: 100;
-  
-  font-size: 16px;
-  min-width: 120px;
-}
-
-.timeline .event:after {
-  box-shadow: 0 0 0 8px #9575cd;
-  left: -28px;
-  background: #212121;
-  border-radius: 50%;
-  height: 8px;
-  width: 8px;
-  content: "";
-  top: 8px;
-}
-/**/
-/*——————————————
-Responsive Stuff
-———————————————*/
-
-@media (max-width: 945px) {
-  .timeline .event::before {
-    left: 0.5px;
-    top: 20px;
-    min-width: 0;
-    font-size: 13px;
-  }
-  .timeline h3 {
-    font-size: 16px;
-  }
-  .timeline p {
-    padding-top: 20px;
-  }
-  section.lab h3.card-title {
-    padding: 5px;
-    font-size: 16px
-  }
-}
-
-@media (max-width: 768px) {
-  .timeline .event::before {
-    left: 0.5px;
-    top: 20px;
-    min-width: 0;
-    font-size: 13px;
-  }
-  .timeline .event:nth-child(1)::before,
-  .timeline .event:nth-child(3)::before,
-  .timeline .event:nth-child(5)::before {
-    top: 38px;
-  }
-  .timeline h3 {
-    font-size: 16px;
-  }
-  .timeline p {
-    padding-top: 20px;
-  }
-}
-/*——————————————
-others
-———————————————*/
-
-a.portfolio-link {
-  margin: 0 auto;
-  display: block;
-  text-align: center;
 }
 
 /***************titles section ****************/
@@ -452,7 +295,11 @@ span.nopadd{
 }
 
 .centerw{
-  text-align: center
+  text-align: center;
+}
+
+.centerw .side-nav{
+  text-align: left;
 }
 
 .centerw ul{
@@ -500,4 +347,54 @@ ul#nav-mobile li a{
     -webkit-animation: fadein .8s ease-in alternate infinite;
     -moz-animation: fadein .8s ease-in alternate infinite;
     animation: fadein .8s ease-in alternate infinite;
+}
+
+
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  z-index: 1001;
+}
+
+#loader-wrapper h4{
+  position: relative;
+  top: 40%;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #FBFBFB;
+  top: 45%;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #FBFBFB;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0%   { transform: rotate(0deg);   }
+  25%  { transform: rotate(180deg); }
+  50%  { transform: rotate(180deg); }
+  75%  { transform: rotate(360deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes loader-inner {
+  0% { height: 0%; }
+  25% { height: 0%; }
+  50% { height: 100%; }
+  75% { height: 100%; }
+  100% { height: 0%; }
 }

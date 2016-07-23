@@ -26,38 +26,46 @@
   <title>CHAOUI Marwane | Portfolio</title>
 
   <!-- CSS  -->
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="_src/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="_src/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="_src/css/font-awesome.css">
+  <link href="_src/css/animate.css" type="text/css" rel="stylesheet"/>
   <link href="_src/css/jquery.tosrus.all.css" type="text/css" rel="stylesheet"/>
 
   
 </head>
 <body>
+<!-- LOADER -->
+<div id="loader-wrapper" class="deep-purple">
+    <h4 class="white-text">Génération de la page...</h4>
+    <span class="loader deep-purple lighten-1">
+      <span class="loader-inner"></span>
+    </span>
+</div>
+<!-- END LOADER -->
+
   <div class="navbar-fixed">
   <nav class="grey darken-4" role="navigation" style="z-index: 100;">
     <div class="nav-wrapper container centerw">
-      <a id="logo-container" href="#" class="hide-on-large-only white-text brand-logo lego">M<span class="hola">ERUC</span><span class="halo">.CHAOUI</span>
-      </a>
+      <a id="logo-container" href="#" class="hide-on-large-only white-text brand-logo lego">meruc.com</a>
       <ul class="hide-on-med-and-down" id="mainemu">
         <li><a class="white-text scollmenu" href="#bio_body">A propos</a></li>
         <li><a class="white-text scollmenu" href="#serv_body">Services</a></li>
         <li><a class="white-text scollmenu" href="#comp_body">Competences</a></li>
         <li><a class="white-text scollmenu" href="#real_body">Realisations</a></li>
-        <li><a class="white-text scollmenu" href="#parc_body">Parcours</a></li>
         <li><a class="white-text scollmenu" href="#cult_body">Culture</a></li>
         <li><a class="white-text modal-trigger" href="https://www.dropbox.com/s/8volrkgt4audgal/CHAOUI%20Marwane%20-%20CV.pdf?dl=0" target="_blanc">Résumé</a></li>
       </ul>
 
       <ul style="left: -250px;" id="nav-mobile" class="side-nav">
-        <li><a class="waves-effect" href="#bio_body">A propos</a></li>
-        <li><a class="waves-effect" href="#serv_body">Services</a></li>
-        <li><a class="waves-effect" href="#comp_body">Competences</a></li>
-        <li><a class="waves-effect" href="#real_body">Realisations</a></li>
-        <li><a class="waves-effect" href="#parc_body">Parcours</a></li>
-        <li><a class="waves-effect" href="#cult_body">Culture</a></li>
-        <li><a class="waves-effect" href="https://www.dropbox.com/s/8volrkgt4audgal/CHAOUI%20Marwane%20-%20CV.pdf?dl=0" target="_blanc">Résumé</a></li>
+        <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect" href="#bio_body">A propos</a></li>
+        <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect" href="#serv_body">Services</a></li>
+        <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect" href="#comp_body">Competences</a></li>
+        <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect" href="#real_body">Realisations</a></li>
+        <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect" href="#cult_body">Culture</a></li>
+        <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect" href="https://www.dropbox.com/s/8volrkgt4audgal/CHAOUI%20Marwane%20-%20CV.pdf?dl=0" target="_blanc">Résumé</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons white-text">menu</i></a>
     </div>
@@ -407,57 +415,10 @@
   </div>
 
 
-<div id="parc_fire" style="opacity: 0" class="container">
+<div id="cult_fire" style="opacity: 0" class="container">
 <div class="row">
 
-  <div class="col offset-l1 l10 s12">
-    <h3 id="parc_body" class="scrollspy header deep-purple-text lighten-1 section-title">
-        <span>Parcours</span>
-    </h3>
-
-    <section id="timeline" class="timeline-outer">
-      <div class="container" id="merulife">
-        <div class="row">
-          <div class="col s12 m12 l10 offset-l1">
-            <ul class="timeline">
-              <li class="event" data-date="2014 – Présent">
-                <h3 class="deep-purple-text">Ingénieur GL</h3>
-                <p>
-                  Etudiant Génie Logiciel à l’école d’ingénierie High-Tech Rabat (Bac+5 cours du soir - Espéré).
-                </p>
-              </li>
-              <li class="event" data-date="Nov. 2013 – Présent">
-                <h3 class="deep-purple-text">Responsable SI</h3>
-                <p>
-                  Employé à High-Tech RABAT – Webmaster et Responsable du système d’information.
-                </p>
-              </li>
-              <li class="event" data-date="Juil. 2012 – Jan. 2013">
-                <h3 class="deep-purple-text">Développeur web</h3>
-                <p>
-                  Stage au sein de l'agence Majjane.ma RABAT – Intégrateur et Développeur web.
-                </p>
-              </li>
-              <li class="event" data-date="2010 – 2012">
-                <h3 class="deep-purple-text">Diplome TDSI</h3>
-                <p>
-                  Technicien spécialisé en développement Informatique à l’institut spécialisé de technologie appliquée Hay Riad Rabat (Option .NET).
-                </p>
-              </li>
-              <li class="event" data-date="2009 - 2010">
-                <h3 class="deep-purple-text">Baccalauréat</h3>
-                <p>
-                  Baccalauréat sciences physiques Lycée Salman El Farsi – Témara.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <div class="col l12 s12" id="cult_fire" style="opacity: 0"> 
+  <div class="col l12 s12"> 
           <h3 id="cult_body" class="scrollspy header deep-purple-text lighten-1 section-title">
               <span>Culture</span>
           </h3>
@@ -598,6 +559,8 @@
 
     ga('create', 'UA-75618010-1', 'auto');
     ga('send', 'pageview');
+
+    window.onload = function(){ $('#loader-wrapper').fadeOut();}
 
   </script>
 
