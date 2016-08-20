@@ -18,6 +18,23 @@
   ];
   Materialize.scrollFire(options);
 
+/***************** Dictionary ********************/
+  
+  var dict = {
+    "A propos": {
+      fr: "A propos",
+      en: "About"
+    }
+  }
+
+/*************************************************/
+
+  var translator = $('body').translate({lang: "fr", t: dict});
+
+  $('#trans').click(function(){ 
+    translator.lang('en'); 
+  });
+
 })(jQuery); 
 
 $("#pslides a").tosrus();
