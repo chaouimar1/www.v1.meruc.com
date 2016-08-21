@@ -398,3 +398,13 @@ ul#nav-mobile li a{
   75% { height: 100%; }
   100% { height: 0%; }
 }
+
+.flag-fr{
+    background-position: 0px 21px;
+    background-image: url("../img/flags.png");
+}
+
+.flag-en{
+    background-position: 0px -3px;
+    background-image: url("../img/flags.png");
+}
