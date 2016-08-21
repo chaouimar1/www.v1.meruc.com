@@ -39,8 +39,15 @@
 <body>
 <!-- LOADER -->
 <div id="loader-wrapper" class="deep-purple">
-    <h4 class="white-text">Génération de la page...</h4>
+    <h4 class="white-text"></h4>
     <span class="loader deep-purple lighten-1">
+      <span class="loader-inner"></span>
+    </span>
+</div>
+
+<div id="loader-wrapper-trans" class="deep-purple" style="display: none;">
+    <h4 class="white-text trn">trans</h4>
+    <span class="loader deep-purple darken-1">
       <span class="loader-inner"></span>
     </span>
 </div>
@@ -57,7 +64,7 @@
         <li><a class="white-text scollmenu trn" href="#real_body">Realisations</a></li>
         <li><a class="white-text scollmenu trn" href="#cult_body">Culture</a></li>
         <li><a class="white-text modal-trigger trn" href="https://www.dropbox.com/s/8volrkgt4audgal/CHAOUI%20Marwane%20-%20CV.pdf?dl=0" target="_blanc">Résumé</a></li>
-        <li><a class="white-text scollmenu trn" id="trans">flag</a></li>
+        <li><a class="white-text scollmenu trn trans">flag</a></li>
       </ul>
 
       <ul style="left: -250px;" id="nav-mobile" class="side-nav">
@@ -67,7 +74,7 @@
         <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect trn" href="#real_body">Réalisations</a></li>
         <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect trn" href="#cult_body">Culture</a></li>
         <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect trn" href="https://www.dropbox.com/s/8volrkgt4audgal/CHAOUI%20Marwane%20-%20CV.pdf?dl=0" target="_blanc">Résumé</a></li>
-        <li><a class="white-text scollmenu" id="trans">sss</a></li>
+        <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect trn trans">flag</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons white-text">menu</i></a>
     </div>
@@ -144,10 +151,10 @@
 
    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
     <a class="btn-floating btn-large deep-purple">
-      <i class="large material-icons">message</i>
+      <i class="fa fa-send"></i>
     </a>
     <ul>
-      <li><a class="btn-floating red" href="mailto:me@meruc.com?Subject=meruc.com" target="_blanc"><i class="fa fa-send"></i></a></li>
+      <li><a class="btn-floating red" href="mailto:me@meruc.com?Subject=meruc.com" target="_blanc"><i class="large material-icons">message</i></a></li>
       <li><a class="btn-floating cyan darken-1" href="https://www.linkedin.com/in/chaouimar1" target="_blanc"><i class="fa fa-linkedin-square"></i></a></li>
     </ul>
   </div>
@@ -558,7 +565,7 @@
     ga('create', 'UA-75618010-1', 'auto');
     ga('send', 'pageview');
 
-    window.onload = function(){ $('#loader-wrapper').fadeOut();}
+    window.onload = function(){ $('#loader-wrapper').slideUp();}
 
   </script>
 

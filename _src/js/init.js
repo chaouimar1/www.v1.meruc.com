@@ -21,10 +21,15 @@
 /***************** Dictionary ********************/
   
   var dict = {
+    // Loader trans
+    "trans": {
+      fr: "Traduction...",
+      en: "Translating..."
+    },
     // Menu
     "flag": {
-      fr: "<span class='flag-fr'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>",
-      en: "<span class='flag-en'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>"
+      fr: "<span class='flag flag-fr'></span>",
+      en: "<span class='flag flag-en'></span>"
     },
     "A propos": {
       fr: "A propos",
@@ -66,7 +71,7 @@
     // Typed slides
     "typed slides": {
       fr: "Je suis <span class='elements'></span> <br>et vous êtes sur mon portfolio.",
-      en: "I'm <span class='elements'></span> <br>and you are on my portfolio."
+      en: "I'm <span class='elements'></span> <br>and this is my portfolio."
     },
     // About parag
     "chaouimar1": {
@@ -160,41 +165,46 @@ var paramsen = { strings: [
             shuffle: false,
             startDelay: 500 }
 
-  if (!document.cookie) {
-    document.cookie = "en";
-    location.reload();
-  }else{
     if (document.cookie=="fr") {
       var translator = $('body').translate({lang: "fr", t: dict});
       $(function(){
         $(".elements").typed(paramsfr);
     });
-    }else if(document.cookie=="en"){
+    }else if(document.cookie=="en" || !document.cookie){
+      document.cookie = "en";
       var translator = $('body').translate({lang: "en", t: dict});
       $(function(){
           $(".elements").typed(paramsen);
       });
     }
-  }
+  
 
-  $('#trans').click(function(){ 
+  $('.trans').click(function(){ 
+
     if (document.cookie=="fr") {
-      translator.lang('en'); 
-      $(function(){
-          $(".elements").typed(paramsen);
+
+      $('#loader-wrapper-trans').fadeIn().delay(200).queue(function(next) {
+          document.cookie = "en";
+          translator.lang('en'); 
+          $(function(){ $(".elements").typed(paramsen); }); 
+          $('#loader-wrapper-trans').fadeOut();
+          next();
       });
-      document.cookie = "en";
-    }else if(document.cookie=="en"){
-      translator.lang('fr');
-      $(function(){
-        $(".elements").typed(paramsfr);
-    });
-      document.cookie = "fr"; 
+
+    } else if(document.cookie=="en"){
+
+      $('#loader-wrapper-trans').fadeIn().delay(200).queue(function(next) {
+          document.cookie = "fr"; 
+          translator.lang('fr');
+          $(function(){ $(".elements").typed(paramsfr); }); 
+          $('#loader-wrapper-trans').fadeOut();
+          next();
+      });
+      
+
     }
     
-    $('.tt').tooltip({delay: 50});
-    
-  });
+    $('.tt').tooltip({delay: 50}); });
 
 })(jQuery); 
 

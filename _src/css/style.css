@@ -350,7 +350,8 @@ ul#nav-mobile li a{
 }
 
 
-#loader-wrapper {
+#loader-wrapper,
+#loader-wrapper-trans {
   position: fixed;
   top: 0;
   left: 0;
@@ -360,7 +361,8 @@ ul#nav-mobile li a{
   z-index: 1001;
 }
 
-#loader-wrapper h4{
+#loader-wrapper h4,
+#loader-wrapper-trans h4{
   position: relative;
   top: 40%;
 }
@@ -399,12 +401,19 @@ ul#nav-mobile li a{
   100% { height: 0%; }
 }
 
-.flag-fr{
-    background-position: 0px 21px;
+.flag{
     background-image: url("../img/flags.png");
+    display: inline-block;
+    width: 23px;
+    height: 21px;
+    margin-bottom: -4px;
+}
+
+.flag-fr{
+    background-position: 0px 25px;
 }
 
 .flag-en{
-    background-position: 0px -3px;
-    background-image: url("../img/flags.png");
+    background-position: 0px 1px;
 }
+
