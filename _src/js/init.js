@@ -18,6 +18,35 @@
   ];
   Materialize.scrollFire(options);
 
+/***************** Cookies functions *************/
+
+function createCookie(name,value,days) {
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        var expires = "; expires="+date.toGMTString();
+    }
+    else var expires = "";
+    document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
+function eraseCookie(name) {
+    createCookie(name,"",-1);
+}
+
+/*************************************************/
+
 /***************** Dictionary ********************/
   
   var dict = {
@@ -165,13 +194,13 @@ var paramsen = { strings: [
             shuffle: false,
             startDelay: 500 }
 
-    if (document.cookie=="fr") {
+    if (readCookie('lang')=="fr") {
       var translator = $('body').translate({lang: "fr", t: dict});
       $(function(){
         $(".elements").typed(paramsfr);
     });
-    }else if(document.cookie=="en" || !document.cookie){
-      document.cookie = "en";
+    }else if(readCookie('lang')=="en" || !readCookie('lang')){
+      createCookie('lang','en',7);
       var translator = $('body').translate({lang: "en", t: dict});
       $(function(){
           $(".elements").typed(paramsen);
@@ -181,30 +210,29 @@ var paramsen = { strings: [
 
   $('.trans').click(function(){ 
 
-    if (document.cookie=="fr") {
+    if (readCookie('lang')=="fr") {
 
       $('#loader-wrapper-trans').fadeIn().delay(200).queue(function(next) {
-          document.cookie = "en";
+          createCookie('lang','en',7);
           translator.lang('en'); 
           $(function(){ $(".elements").typed(paramsen); }); 
+          $('.tt').tooltip({delay: 50});
           $('#loader-wrapper-trans').fadeOut();
           next();
       });
 
-    } else if(document.cookie=="en"){
+    } else if(readCookie('lang')=="en"){
 
       $('#loader-wrapper-trans').fadeIn().delay(200).queue(function(next) {
-          document.cookie = "fr"; 
+          createCookie('lang','fr',7); 
           translator.lang('fr');
           $(function(){ $(".elements").typed(paramsfr); }); 
+          $('.tt').tooltip({delay: 50});
           $('#loader-wrapper-trans').fadeOut();
           next();
       });
-      
-
     }
-    
-    $('.tt').tooltip({delay: 50}); });
+  });
 
 })(jQuery); 
 
