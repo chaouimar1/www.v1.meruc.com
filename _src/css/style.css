@@ -417,3 +417,28 @@ ul#nav-mobile li a{
     background-position: 0px 1px;
 }
 
+#socicons{
+    text-align: center;
+}
+
+#socicons li{
+  display: inline-block;
+  margin: 0 30px;
+  border: 3px solid #222;
+  padding-top: 16px;
+  border-radius: 35px;
+  width: 70px;
+  height: 70px;
+  transition: .2s ease-in;
+}
+
+#socicons li a{ 
+  color: #555;
+  transition: .1s ease-in;
+ }
+
+#socicons li:hover,
+#socicons li:hover a{
+  color: #673ab7;
+  border-color: #673ab7;
+}

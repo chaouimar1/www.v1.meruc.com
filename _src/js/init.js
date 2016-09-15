@@ -14,7 +14,8 @@
     { selector:"#serv_fire", offset: 100, callback: "$('#serv_fire').addClass('animated fadeIn');" },
     { selector:"#comp_fire", offset: 100, callback: "$('#comp_fire').addClass('animated fadeIn');" },
     { selector:"#real_fire", offset: 100, callback: "$('#real_fire').addClass('animated fadeIn');" },
-    { selector:"#cult_fire", offset: 100, callback: "$('#cult_fire').addClass('animated fadeIn');" }
+    { selector:"#cult_fire", offset: 100, callback: "$('#cult_fire').addClass('animated fadeIn');" },
+    { selector:"#cult_fire", offset: 100, callback: "$('#soc_fire').addClass('animated fadeIn');" }
   ];
   Materialize.scrollFire(options);
 
@@ -97,6 +98,10 @@ function eraseCookie(name) {
       fr: "REALISATIONS",
       en: "ACHIEVEMENTS"
     },
+    "SN": {
+      fr: "Mettons-nous en contact",
+      en: "Let's get in touch"
+    },
     // Typed slides
     "typed slides": {
       fr: "Je suis <span class='elements'></span> <br>et vous êtes sur mon portfolio.",
@@ -115,6 +120,10 @@ function eraseCookie(name) {
     "WEBDEV": {
       fr: "Création des Sites Web",
       en: "Websites Development"
+    },
+    "RD": {
+      fr: "Design Responsive",
+      en: "Responsive Design"
     },
     // Achiv
     "Avocapp": {
