@@ -349,58 +349,6 @@ ul#nav-mobile li a{
     animation: fadein .8s ease-in alternate infinite;
 }
 
-
-#loader-wrapper,
-#loader-wrapper-trans {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  z-index: 1001;
-}
-
-#loader-wrapper h4,
-#loader-wrapper-trans h4{
-  position: relative;
-  top: 40%;
-}
-
-.loader {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  border: 4px solid #FBFBFB;
-  top: 45%;
-  animation: loader 2s infinite ease;
-}
-
-.loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  width: 100%;
-  background-color: #FBFBFB;
-  animation: loader-inner 2s infinite ease-in;
-}
-
-@keyframes loader {
-  0%   { transform: rotate(0deg);   }
-  25%  { transform: rotate(180deg); }
-  50%  { transform: rotate(180deg); }
-  75%  { transform: rotate(360deg); }
-  100% { transform: rotate(360deg); }
-}
-
-@keyframes loader-inner {
-  0% { height: 0%; }
-  25% { height: 0%; }
-  50% { height: 100%; }
-  75% { height: 100%; }
-  100% { height: 0%; }
-}
-
 .flag{
     background-image: url("../img/flags.png");
     display: inline-block;

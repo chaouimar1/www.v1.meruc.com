@@ -9,6 +9,7 @@
 - [Jquery](http://jquery.com/)
 - [Translate.js](http://www.openxrest.com/translatejs/)
 - [Typed.js](http://www.mattboldt.com/demos/typed-js/)
+- [SmartOptimizer](https://github.com/farhadi/SmartOptimizer)
 
 - [http://www.favicon-generator.org/](favicon-generator.org)
 
