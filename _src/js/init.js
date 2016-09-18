@@ -99,8 +99,8 @@ function eraseCookie(name) {
       en: "ACHIEVEMENTS"
     },
     "SN": {
-      fr: "Mettons-nous en contact",
-      en: "Let's get in touch"
+      fr: "METTONS-NOUS EN CONTACT",
+      en: "LET'S GET I TOUCH"
     },
     // Typed slides
     "typed slides": {
