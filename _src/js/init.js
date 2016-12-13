@@ -100,7 +100,7 @@ function eraseCookie(name) {
     },
     "SN": {
       fr: "METTONS-NOUS EN CONTACT",
-      en: "LET'S GET I TOUCH"
+      en: "LET'S GET IN TOUCH"
     },
     // Typed slides
     "typed slides": {
