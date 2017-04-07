@@ -5,6 +5,7 @@
 
 body {
   font-family: Ubuntu, sans-serif;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 1201px) {
@@ -389,4 +390,8 @@ ul#nav-mobile li a{
 #socicons li:hover a{
   color: #673ab7;
   border-color: #673ab7;
+}
+
+.spinner-deep-purple2, .spinner-deep-purple2-only{
+  border-color: #9575cd;
 }
