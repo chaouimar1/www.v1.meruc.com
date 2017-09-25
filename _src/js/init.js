@@ -176,11 +176,11 @@ function eraseCookie(name) {
 
 /*************************************************/
 var paramsfr = { strings: [
-                  "un <span class=\"deep-purple\"><u>Développeur Web</u></span>",
+                  "un <span class=\"white grey-text text-darken-4\"><u>Développeur Web</u></span>",
                   "un <span><u>Frontend'er</u></span>",
                   "un <span><u>Débutant <span class=\"light-green darken-1\">Android</span></u></span>",
-                  "un <span><u>Utilisateur <span class=\"orange\">Ubuntu</span></u></span>",
-                  "<span class=\"white grey-text text-darken-4\"><u>&nbsp;Marwane CHAOUI&nbsp;</u></span>^15000"],
+                  "un <span><u>Utilisateur <span class=\"light-blue darken-2\">Ubuntu</span></u></span>",
+                  "<span class=\"deep-purple\"><u>&nbsp;Marwane CHAOUI&nbsp;</u></span>^15000"],
           contentType: 'html',
           loop: true,
           cursorChar: "_",
@@ -190,11 +190,11 @@ var paramsfr = { strings: [
           startDelay: 500 };
 
 var paramsen = { strings: [
-                    "a <span class=\"deep-purple\"><u>Web Developer</u></span>",
+                    "a <span class=\"white grey-text text-darken-4\"><u>Web Developer</u></span>",
                     " <span><u>Frontend'er</u></span>",
                     "an <span><u><span class=\"light-green darken-1\">Android</span> beginner</u></span>",
-                    "a <span><u><span class=\"orange\">Ubuntu</span> user</u></span>",
-                    "<span class=\"white grey-text text-darken-4\"><u>&nbsp;Marwane CHAOUI&nbsp;</u></span>^15000"],
+                    "a <span><u><span class=\"light-blue darken-2\">Ubuntu</span> user</u></span>",
+                    "<span class=\"deep-purple\"><u>&nbsp;Marwane CHAOUI&nbsp;</u></span>^15000"],
             contentType: 'html',
             loop: true,
             cursorChar: "_",
@@ -256,3 +256,18 @@ function tabselect(type){
   }
 };
 
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#bio_body');
+   var offset = startchange.offset();
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('.navbar-fixed nav').removeClass('grey darken-4').addClass('white');
+          $('#mainemu li a').removeClass('white-text').addClass('grey-text text-darken-2');
+       } else {
+          $('.navbar-fixed nav').removeClass('white').addClass('grey darken-4');
+          $('#mainemu li a').removeClass('grey-text text-darken-2').addClass('white-text');
+       }
+   });
+});

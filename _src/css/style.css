@@ -54,7 +54,7 @@ p {
 }
 
 .parallax-container {
-  min-height: 450px;
+  min-height: 700px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
@@ -229,6 +229,7 @@ footer.page-footer{
 #mainemu a:hover,
 #mainemu a.active{
   background-color: #673ab7;
+  color: #FFF !important;
 }
 
 /***************titles section ****************/
@@ -394,4 +395,8 @@ ul#nav-mobile li a{
 
 .spinner-deep-purple2, .spinner-deep-purple2-only{
   border-color: #9575cd;
+}
+
+.navbar-fixed nav{
+  transition: all .3s;
 }
