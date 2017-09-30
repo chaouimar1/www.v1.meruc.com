@@ -265,9 +265,13 @@ $(document).ready(function(){
       if(scroll_start > offset.top) {
           $('.navbar-fixed nav').removeClass('grey darken-4').addClass('white');
           $('#mainemu li a').removeClass('white-text').addClass('grey-text text-darken-2');
+          $('.centerw .button-collapse .material-icons').removeClass('white-text').addClass('grey-text text-darken-2');
+          $('.centerw #logo-container').removeClass('white-text').addClass('grey-text text-darken-2');
        } else {
           $('.navbar-fixed nav').removeClass('white').addClass('grey darken-4');
           $('#mainemu li a').removeClass('grey-text text-darken-2').addClass('white-text');
+          $('.centerw .button-collapse .material-icons').removeClass('grey-text text-darken-2').addClass('white-text');
+          $('.centerw #logo-container').removeClass('grey-text text-darken-2').addClass('white-text');
        }
    });
 });
