@@ -1,0 +1,22 @@
+{
+  "name": "www.meruc.com",
+  "version": "2.2.0",
+  "description": "personal portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaouimar1/www.meruc.com.git"
+  },
+  "author": "chaouimar1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaouimar1/www.meruc.com/issues"
+  },
+  "homepage": "https://github.com/chaouimar1/www.meruc.com#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

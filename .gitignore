@@ -1,2 +1,5 @@
 # Cache data
 /smartoptimizer/Cache/*
+
+#nodejs modules
+/node_modules
