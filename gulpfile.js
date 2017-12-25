@@ -1,9 +1,10 @@
 var gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
-    pump = require('pump');
+    pump = require('pump'),
+    imagemin = require('gulp-imagemin');
 
- 
+
 gulp.task('minify-css', () => {
     return gulp.src('_src/css/dev/*.css')
         .pipe(cleanCSS({ compatibility: 'ie8' },
@@ -33,7 +34,13 @@ gulp.task('watch', function(){
     })
 })
 
+gulp.task('minify-img', function(){
+    gulp.src('_src/img/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('_src/img'))
+});
+
 // Tasks container
-gulp.task('default', ['minify-css', 'compress-js'], function () {
+gulp.task('default', ['minify-css', 'compress-js', 'minify-img'], function () {
 
 });
