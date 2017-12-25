@@ -41,6 +41,6 @@ gulp.task('minify-img', function(){
 });
 
 // Tasks container
-gulp.task('default', ['minify-css', 'compress-js', 'minify-img'], function () {
+gulp.task('default', ['minify-css', 'compress-js'], function () {
 
 });
