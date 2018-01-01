@@ -247,6 +247,8 @@ var paramsen = { strings: [
 
 $("#pslides a").tosrus();
 
+$("#curryear").text((new Date).getFullYear());
+
 function tabselect(type){
   $('.micards .card').fadeTo( "fast", 0.5 );
   $('.micards .card').removeClass("fading");
