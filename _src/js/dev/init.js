@@ -91,8 +91,12 @@ function eraseCookie(name) {
       en: "ABOUT"
     },
     "JE MAITRISE": {
-      fr: "JE MAITRISE",
-      en: "MASTERING"
+      fr: "TÉCHNOLOGIES",
+      en: "TECHNOLOGIES"
+    },
+    "OUTILS": {
+      fr: "OUTILS",
+      en: "TOOLS"
     },
     "REALISATIONS": {
       fr: "REALISATIONS",
@@ -109,8 +113,8 @@ function eraseCookie(name) {
     },
     // About parag
     "chaouimar1": {
-      fr: "Je suis un jeune <strong class='deep-purple-text'>Développeur</strong> Marocain. Suivant mes études d'ingénierie en <span class='tt' data-position='top' data-tooltip='Génie Logiciel'>GL</span>. J'aime decouvrir les nouvelles technologies et les projets open source.",
-      en: "I am a young Moroccan <strong class='deep-purple-text'>Developer</strong>. Getting my engineering studies in <span class='tt' data-position='top' data-tooltip='Software Engineering'>SE</span>. I like discovering new technologies and open source projects.",
+      fr: "Salut! Je suis un jeune <strong class='deep-purple-text'>Développeur</strong> Marocain. Suivant mes études d'ingénierie en <span class='tt' data-position='top' data-tooltip='Génie Logiciel'>GL</span>. J'aime decouvrir les nouvelles technologies et les projets open source.",
+      en: "Hi! I am a young Moroccan <strong class='deep-purple-text'>Developer</strong>. Getting my engineering studies in <span class='tt' data-position='top' data-tooltip='Software Engineering'>SE</span>. I like discovering new technologies and open source projects.",
     },
     // Services parag
     "SI": {
