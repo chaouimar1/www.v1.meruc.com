@@ -400,7 +400,3 @@ ul#nav-mobile li a{
 .navbar-fixed nav{
   transition: all .3s;
 }
-
-.micards .col{
-  padding: 0;
-}
