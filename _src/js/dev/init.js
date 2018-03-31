@@ -125,9 +125,9 @@ function eraseCookie(name) {
       fr: "Création des Sites Web",
       en: "Websites Development"
     },
-    "RD": {
-      fr: "Design Responsive",
-      en: "Responsive Design"
+    "MA": {
+      fr: "Mobile Apps",
+      en: "Applications Mobiles"
     },
     // Achiv
     "Avocapp": {
@@ -180,9 +180,8 @@ function eraseCookie(name) {
 
 /*************************************************/
 var paramsfr = { strings: [
-                  "un <span class=\"white grey-text text-darken-4\"><u>Développeur Web</u></span>",
+                  "un <span class=\"white grey-text text-darken-4\"><u>Développeur Web/Mobile</u></span>",
                   "un <span><u>Back/Frontend'er</u></span>",
-                  "un <span><u>Débutant <span class=\"light-green darken-1\">Android</span></u></span>",
                   "un <span><u>Utilisateur <span class=\"red darken-2\">Hackintosh</span></u></span>",
                   "<span class=\"deep-purple\"><u>&nbsp;Marwane CHAOUI&nbsp;</u></span>^15000"],
           contentType: 'html',
@@ -194,9 +193,8 @@ var paramsfr = { strings: [
           startDelay: 500 };
 
 var paramsen = { strings: [
-                    "a <span class=\"white grey-text text-darken-4\"><u>Web Developer</u></span>",
+                    "a <span class=\"white grey-text text-darken-4\"><u>Web/Mobile Developer</u></span>",
                     " <span><u>Back/Frontend'er</u></span>",
-                    "an <span><u><span class=\"light-green darken-1\">Android</span> beginner</u></span>",
                     "a <span><u><span class=\"red darken-2\">Hackintosh</span> user</u></span>",
                     "<span class=\"deep-purple\"><u>&nbsp;Marwane CHAOUI&nbsp;</u></span>^15000"],
             contentType: 'html',
