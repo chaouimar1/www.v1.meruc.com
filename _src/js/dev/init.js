@@ -75,7 +75,7 @@ function eraseCookie(name) {
     },
     "Realisations": {
       fr: "Réalisations",
-      en: "achievements"
+      en: "Works"
     },
     "Culture": {
       fr: "Culture",
@@ -100,7 +100,7 @@ function eraseCookie(name) {
     },
     "REALISATIONS": {
       fr: "REALISATIONS",
-      en: "ACHIEVEMENTS"
+      en: "WORKS"
     },
     "SN": {
       fr: "METTONS-NOUS EN CONTACT",
@@ -126,8 +126,8 @@ function eraseCookie(name) {
       en: "Websites Development"
     },
     "MA": {
-      fr: "Mobile Apps",
-      en: "Applications Mobiles"
+      fr: "Applications Mobiles",
+      en: "Mobile Apps"
     },
     // Achiv
     "Avocapp": {
@@ -142,6 +142,14 @@ function eraseCookie(name) {
       fr: "Pour une meilleur vision des pointages des personnels, voici une application web qui ameliore la présentation des pointages avec deux interfaces: quotidienne et hebdomadaire.",
       en: "For a better understanding of personnel clockings, here is a web application that improves the presentation of the scores with two interfaces: daily and weekly."
     },
+    "PFE": {
+      fr: "Une application web qui gére les données saisis statistiques graphiques et en mode hors ligne avec une synchronisation centralisée.",
+      en: "A web app that manage typed data to charts with offline mode and a centralized synchronization."
+    },
+    "mrissa": {
+      fr: "Un portail web pour la commune Lamrissa.",
+      en: "A portal web for department of Lamrissa."
+    },
     "OEM": {
       fr: "Une application Windows simple qui permet de changer les informations tel que la marque, model et image de la machine et ainsi le nom du processeur.",
       en: "A simple Windows application to change information such as the make, model and image of the machine and so the processor's name."
@@ -151,8 +159,8 @@ function eraseCookie(name) {
       en: "Different colors in widgets for the sidebar of windows 7, based on the original (the orange one)."
     },
     "Calendars": {
-      fr: "Calendriers multicolores pour Windows Sidebar",
-      en: "Colored calendars for Windows Sidebar"
+      fr: "Calendriers multicolores",
+      en: "Colored calendars"
     },
     // Cult tabs
     "Tout": {
