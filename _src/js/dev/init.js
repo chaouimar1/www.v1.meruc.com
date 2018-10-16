@@ -190,7 +190,6 @@ function eraseCookie(name) {
 var paramsfr = { strings: [
                   "un <span class=\"white grey-text text-darken-4\"><u>Développeur Web/Mobile</u></span>",
                   "un <span><u>Back-End Dev</u></span>",
-                  "un <span><u>Utilisateur <span class=\"red darken-2\">Hackintosh</span></u></span>",
                   "<span class=\"deep-purple\"><u>&nbsp;Marwane CHAOUI&nbsp;</u></span>^15000"],
           contentType: 'html',
           loop: true,
@@ -203,7 +202,6 @@ var paramsfr = { strings: [
 var paramsen = { strings: [
                     "a <span class=\"white grey-text text-darken-4\"><u>Web/Mobile Developer</u></span>",
                     " <span><u>Back-End Dev</u></span>",
-                    "a <span><u><span class=\"red darken-2\">Hackintosh</span> user</u></span>",
                     "<span class=\"deep-purple\"><u>&nbsp;Marwane CHAOUI&nbsp;</u></span>^15000"],
             contentType: 'html',
             loop: true,
