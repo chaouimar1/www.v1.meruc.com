@@ -162,6 +162,10 @@ function eraseCookie(name) {
       fr: "Calendriers multicolores",
       en: "Colored calendars"
     },
+    "VSCode": {
+      fr: "Des icônes pour Visual Studio Code par Dhanishgajjar",
+      en: "Visual Studio Code Icones by Dhanishgajjar"
+    },
     // Cult tabs
     "Tout": {
       fr: "Tout",
@@ -284,4 +288,32 @@ $(document).ready(function(){
           $('.centerw #logo-container').removeClass('grey-text text-darken-2').addClass('white-text');
        }
    });
+});
+
+$(window).load(function(){
+    var $container = $('.portfolioContainer');
+    $container.isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+        }
+    });
+ 
+    $('.portfolioFilter a').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+ 
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+         });
+         return false;
+    }); 
 });
