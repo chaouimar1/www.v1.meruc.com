@@ -227,11 +227,11 @@ footer.page-footer{
   padding-top: 0;
 }
 
-#mainemu a:hover,
+/* #mainemu a:hover,
 #mainemu a.active{
   background-color: #673ab7;
   color: #FFF !important;
-}
+} */
 
 /***************titles section ****************/
 
@@ -316,6 +316,9 @@ span.nopadd{
 ul#mainemu li a,
 ul#nav-mobile li a{
   text-transform: uppercase;
+  position: relative;
+  padding: 0 25px;
+  letter-spacing: 1px;
 }
 
 #comp_fire .card img{
@@ -540,4 +543,70 @@ img.activator {
 
 .card-images {
   position: relative;
+}
+
+/********** Evangelion Skin **********/
+.nav {
+  background-color: #1d1a2f !important;
+}
+
+.deepurpleva{
+  background-color: #1d1a2f;
+}
+
+.purpleva{
+  background-color: #765898;
+}
+
+.neoneva{
+  background-color: #52d053;
+}
+
+.accenteva{
+  background-color: #e6770b;
+}
+
+.btn-floating:hover {
+    background-color: #52d053;
+}
+
+#mainemu a:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: skewX(-30deg);
+  opacity: 0;
+  transition: all 0.3s;
+  border-right: 7px solid #765898;
+}
+#mainemu li:focus a,
+#mainemu li.active a {
+  color: #fff;
+}
+
+#mainemu li,
+#mainemu li a {
+  transition: opacity 0.3s;
+}
+
+#mainemu li:hover a:after {
+  opacity: 1;
+  background-color: #52d053;
+}
+
+#mainemu a.active:after {
+  opacity: 1;
+  background-color: #52d053;
+}
+
+#mainemu li:hover a:after {
+  opacity: 1;
+}
+
+#mainemu a:hover {
+  background-color: rgba(0,0,0,0);
 }
