@@ -28,7 +28,7 @@
 
   <style type="text/css">
     /* Loader inline style */
-    #loader-wrapper,#loader-wrapper-trans{position:fixed;top:0;left:0;height:100%;width:100%;text-align:center;z-index:1001}#loader-wrapper h4,#loader-wrapper-trans h4{position:relative;top:40%}.l-grey{background-color:#212121!important}.l-white{color:#FFF!important}.l-purple{background-color:#52d053 !important}#loader-wrapper .preloader-wrapper{top: 50%}
+    #loader-wrapper,#loader-wrapper-trans{position:fixed;top:0;left:0;height:100%;width:100%;text-align:center;z-index:1001}#loader-wrapper h4,#loader-wrapper-trans h4{position:relative;top:40%}.l-grey{background-color:#212121!important}.l-white{color:#FFF!important}.l-purple{background-color:#7e57c2!important}#loader-wrapper .preloader-wrapper{top: 50%}
   </style>
   
 </head>
@@ -56,24 +56,24 @@
 <!-- END LOADER -->
 
   <div class="navbar-fixed">
-  <nav class="grey nav" role="navigation" style="z-index: 100;">
+  <nav class="grey darken-4" role="navigation" style="z-index: 100;">
     <div class="nav-wrapper container centerw">
       <a id="logo-container" href="#" class="hide-on-large-only white-text brand-logo lego">meruc.com</a>
       <ul class="hide-on-med-and-down" id="mainemu">
         <li><a class="white-text scollmenu trn" href="#bio_body">A propos</a></li>
-        <li><a class="white-text scollmenu trn" href="#serv_body">Services</a></li>
         <li><a class="white-text scollmenu trn" href="#comp_body">Compétences</a></li>
         <li><a class="white-text scollmenu trn" href="#real_body">Realisations</a></li>
         <li><a class="white-text scollmenu trn" href="#cult_body">Culture</a></li>
+        <li><a class="white-text modal-trigger trn" href="https://goo.gl/Lms3iH" target="_blanc">Résumé</a></li>
         <li><a class="white-text scollmenu trn trans">flag</a></li>
       </ul>
 
       <ul style="left: -250px;" id="nav-mobile" class="side-nav">
         <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect trn" href="#bio_body">A propos</a></li>
-        <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect trn" href="#serv_body">Services</a></li>
         <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect trn" href="#comp_body">Compétences</a></li>
         <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect trn" href="#real_body">Réalisations</a></li>
         <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect trn" href="#cult_body">Culture</a></li>
+        <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect trn" href="https://www.dropbox.com/s/8volrkgt4audgal/CHAOUI%20Marwane%20-%20CV.pdf?dl=0" target="_blanc">Résumé</a></li>
         <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect trn trans">flag</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons white-text">menu</i></a>
@@ -103,54 +103,22 @@
               <h3 class="header deep-purple-text lighten-1 section-title">
                   <span id="bio_body" class="scrollspy trn">A PROPOS</span>
               </h3>
-              <p class="flow-text lh trn">chaouimar1</p>
+              <p class="flow-text lh trn desc_me">
+                  I'm a software engineer based in Rabat 🇲🇦. <br>
+                  <!-- I turn !<span style="text-decoration: line-through">coffee</span> but tea into code. <br> -->
+                  Love working on web technologies like <span class="symfony">Symfony</span>, <span class="ionic">Ionic</span> and <span
+                    class="wordpress">WordPress</span>. <br>
+                  Currently exploring other technologies such as <span class="reactnative">React Native</span> and <span
+                    class="es6">ES6</span>. <br>
+                </p>
+              </p>
           </div>
       </div>
-  </div>
-
-
-  <div class="container" id="serv_fire" style="opacity: 0">
-    <br>
-
-    <h3 id="serv_body" class="scrollspy header deep-purple-text lighten-1 section-title trn">
-        <span>SERVICES</span>
-    </h3>
-
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row" id="services">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center deep-purple-text"><i class="material-icons f120">mode_edit</i></h2>
-            <h4 class="center trn">SI</h4>
-
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center deep-purple-text"><i class="material-icons f120">code</i></h2>
-            <h4 class="center trn">WEBDEV</h4>
-
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center deep-purple-text"><i class="material-icons f120">phone_android</i></h2>
-            <h4 class="center trn">MA</h4>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
   </div>
 
 
    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-    <a class="btn-floating btn-large neoneva" href="mailto:me@meruc.com?Subject=meruc.com" target="_blanc">
+    <a class="btn-floating btn-large deep-purple" href="mailto:me@meruc.com?Subject=meruc.com" target="_blanc">
       <i class="fa fa-envelope"></i>
     </a>
   </div>
@@ -380,10 +348,10 @@
                 <div class="col l12">
                   <div class="portfolioFilter clearfix">
                     <a href="#" data-filter="*" class="black current">All Categories</a>
-                    <a href="#" data-filter=".contributions" class="deepurpleva">Open Source Contributions</a>
-                    <a href="#" data-filter=".sideprojects" class="purpleva">Side Projects</a>
-                    <a href="#" data-filter=".web" class="neoneva">Web</a>
-                    <a href="#" data-filter=".desktop" class="accenteva">Desktop</a>
+                    <a href="#" data-filter=".contributions" class="amber accent-4">Open Source Contributions</a>
+                    <a href="#" data-filter=".sideprojects" class="blue darken-3">Side Projects</a>
+                    <a href="#" data-filter=".web" class="teal">Web</a>
+                    <a href="#" data-filter=".desktop" class="blue-grey darken-4">Desktop</a>
                   </div>
                 </div>
                 <div class="col l12 portfolioContainer">
@@ -392,7 +360,7 @@
                     <div class="card av">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="_src/img/proj/avocapp/a2.PNG">
-                        <div class="arrow neoneva">
+                        <div class="arrow teal">
                           <span>Web</span>
                         </div>
                       </div>
@@ -410,7 +378,7 @@
                     <div class="card mi">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="_src/img/proj/ordre/o2_dir.PNG">
-                        <div class="arrow neoneva">
+                        <div class="arrow teal">
                           <span>Web</span>
                         </div>
                       </div>
@@ -428,7 +396,7 @@
                     <div class="card po">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="_src/img/proj/pointage/p4.PNG">
-                        <div class="arrow neoneva">
+                        <div class="arrow teal">
                           <span>Web</span>
                         </div>
                       </div>
@@ -462,7 +430,7 @@
                     <div class="card pfe">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="_src/img/proj/pfe/2.jpg">
-                        <div class="arrow neoneva">
+                        <div class="arrow teal">
                           <span>Web</span>
                         </div>
                       </div>
@@ -494,7 +462,7 @@
                     <div class="card oem">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="_src/img/proj/OCT.PNG">
-                        <div class="arrow purpleva">
+                        <div class="arrow blue darken-3">
                           <span>Side P</span>
                         </div>
                       </div>
@@ -507,12 +475,12 @@
                       </div>
                     </div>
                   </div>
-                                    
+                  
                   <div class="col l3 s12 m6 desktop contributions">
                     <div class="card cal">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="_src/img/proj/vscode.png">
-                        <div class="arrow deepurpleva">
+                        <div class="arrow amber accent-4">
                           <span>OpenS</span>
                         </div>
                       </div>
@@ -529,7 +497,7 @@
                     <div class="card cal">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="_src/img/proj/arc/icons.png">
-                        <div class="arrow accenteva">
+                        <div class="arrow blue-grey darken-4">
                           <span>Desk</span>
                         </div>
                       </div>
@@ -554,7 +522,7 @@
                     <div class="card cal">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="_src/img/proj/bouayadapp.png">
-                        <div class="arrow purpleva">
+                        <div class="arrow blue darken-3">
                           <span>Side P</span>
                         </div>
                       </div>
@@ -732,7 +700,6 @@
         <li><a href="https://github.com/chaouimar1" target="_blanc"><i class="fa fa-2x fa-github"></i></a></li>
         <li><a href="https://instagram.com/chaouimar1" target="_blanc"><i class="fa fa-2x fa-instagram"></i></a></li>
         <li><a href="https://500px.com/chaouimar1/" target="_blanc"><i class="fa fa-2x fa-500px"></i></a></li>
-        <li><a href="https://www.twitter.com/chaouimar1" target="_blanc"><i class="fa fa-2x fa-twitter"></i></a></li>
       </ul>
   </div>
 </div>
@@ -740,8 +707,8 @@
 
 
 
-  <footer class="page-footer">
-    <div class="footer-copyright nav">
+  <footer class="page-footer grey darken-4">
+    <div class="footer-copyright grey darken-4">
       <div class="container center">
       <span class="trn">coded</span> <i class="fa fa-heart deep-purple-text text-lighten-2"></i> // <a id="curryear" target="_blanc" class="deep-purple-text text-lighten-3" href="http://goo.gl/K2iP8k"></a>
       </div>
@@ -753,7 +720,7 @@
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="_src/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="_src/css/dev/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="_src/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="_src/css/font-awesome.css">
   <link href="_src/css/animate.css" type="text/css" rel="stylesheet"/>
   <link href="_src/css/jquery.tosrus.all.css" type="text/css" rel="stylesheet"/>
@@ -764,7 +731,7 @@
   <script src="_src/js/materialize.min.js"></script>
   <script src="_src/js/translate.js"></script>
   <script src="_src/js/typed.js"></script>
-  <script src="_src/js/dev/init.js"></script>
+  <script src="_src/js/init.js"></script>
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
