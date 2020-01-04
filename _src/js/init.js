@@ -136,17 +136,13 @@ function eraseCookie(name) {
       fr: "Tout",
       en: "all"
     },
-    "films": {
-      fr: "films",
-      en: "movies"
+    "films/séries": {
+      fr: "films/séries",
+      en: "movies/series"
     },
-    "séries": {
-      fr: "séries",
-      en: "series"
-    },
-    "jeux vidéos": {
-      fr: "jeux vidéos",
-      en: "Video games"
+    "autres": {
+      fr: "autres",
+      en: "others"
     },
     // Footer
     "coded": {
