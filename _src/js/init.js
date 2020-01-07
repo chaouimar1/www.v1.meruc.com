@@ -149,6 +149,10 @@ function eraseCookie(name) {
       fr: "Codé par moi-même avec",
       en: "Coded by myself with"
     },
+    "hosted": {
+      fr: "Hébérgé fièrement sur ",
+      en: "Hosted proudly on "
+    },
   }
 
 /*************************************************/
