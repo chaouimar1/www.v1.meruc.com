@@ -343,10 +343,10 @@ ul#nav-mobile li a{
     to { opacity: 1; }
 }
 
-.fading.ot,
-.fading.fl,
-.fading.sr,
-.fading.jv{
+.fading.fs,
+.fading.pod,
+.fading.dev,
+.fading.ot{
     -webkit-animation: fadein .8s ease-in alternate infinite;
     -moz-animation: fadein .8s ease-in alternate infinite;
     animation: fadein .8s ease-in alternate infinite;

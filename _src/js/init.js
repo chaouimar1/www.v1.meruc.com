@@ -227,11 +227,11 @@ $("#pslides a").tosrus();
 $("#curryear").text((new Date).getFullYear());
 
 function tabselect(type){
-  $('.micards .card').fadeTo( "fast", 0.5 );
-  $('.micards .card').removeClass("fading");
-    $('.micards .'+type).fadeTo( "fast", 1 );
+  $('.item img').fadeTo( "fast", 0.5 );
+  $('.item img').removeClass("fading");
+    $('.item .'+type).fadeTo( "fast", 1 );
   if(type!="tt"){
-    $('.micards .'+type).addClass("fading");
+    $('.item .'+type).addClass("fading");
   }
 };
 
